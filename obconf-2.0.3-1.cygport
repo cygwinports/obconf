@@ -1,0 +1,5 @@
+DESCRIPTION="Configuration tool for the OpenBox window manager"
+HOMEPAGE="http://icculus.org/openbox/"
+SRC_URI="http://icculus.org/openbox/obconf/${P}.tar.gz"
+
+DIFF_EXCLUDES="m4"
