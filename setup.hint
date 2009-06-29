@@ -1,4 +1,4 @@
 category: X11
-requires: cygwin gdk-pixbuf2 glib2 gtk2-x11 libglade2 libintl8 libX11_6 libxml2 openbox startup-notification
+requires: gdk-pixbuf2 glib2 gtk2-x11 libglade2 libintl8 libX11_6 libxml2 openbox startup-notification
 sdesc: "OpenBox WM configuration tool"
 ldesc: "Configuration tool for the OpenBox window manager."
