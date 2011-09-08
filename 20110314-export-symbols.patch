@@ -1,0 +1,20 @@
+--- origsrc/m4/exportdynamic.m4	2010-03-09 09:51:02.000000000 -0600
++++ src/m4/exportdynamic.m4	2011-09-08 00:03:22.151449400 -0500
+@@ -2,6 +2,7 @@ dnl Check how to export all functions, w
+ dnl the event handlers.
+ AC_DEFUN([CHECK_EXPORT_DYNAMIC],
+ [
++  AC_REQUIRE([AC_CANONICAL_HOST])
+   AC_MSG_CHECKING(for extra flags needed to export symbols)
+   case $host_os in
+     aix4*|aix5*)
+@@ -10,6 +11,9 @@ AC_DEFUN([CHECK_EXPORT_DYNAMIC],
+     bsdi*)
+       EXPORT_DYNAMIC_FLAGS="-rdynamic"
+       ;;
++    cygwin*)
++      EXPORT_DYNAMIC_FLAGS="-Wl,--export-all-symbols"
++      ;;
+     *)
+       save_ldflags="$LDFLAGS"
+       LDFLAGS=-Wl,-export-dynamic

@@ -1,0 +1,8 @@
+DESCRIPTION="Configuration tool for the OpenBox window manager"
+HOMEPAGE="http://openbox.org/"
+#SRC_URI="http://openbox.org/dist/${PN}/${P}.tar.gz"
+SRC_URI="http://dev.gentoo.org/~hwoarang/distfiles/${P}.tar.gz"
+SRC_DIR=.
+
+PATCH_URI="mirror://portage/x11-misc/${PN}/files/${P}-config-path.patch
+           20110314-export-symbols.patch"
