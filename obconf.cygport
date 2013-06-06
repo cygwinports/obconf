@@ -1,0 +1,14 @@
+NAME="obconf"
+VERSION=2.0.3_p20110314
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="OpenBox WM configuration tool"
+DESCRIPTION="Configuration tool for the OpenBox window manager."
+HOMEPAGE="http://openbox.org/"
+#SRC_URI="http://openbox.org/dist/obconf/obconf-${VERSION}.tar.gz"
+SRC_URI="http://dev.gentoo.org/~hwoarang/distfiles/obconf-${VERSION}.tar.gz"
+SRC_DIR=.
+PATCH_URI="mirror://portage/x11-misc/obconf/files/obconf-${VERSION}-config-path.patch
+           20110314-export-symbols.patch"
+
+DIFF_EXCLUDES="*.po"

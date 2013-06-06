@@ -1,4 +1,0 @@
-category: X11
-requires: libgdk_pixbuf2.0_0 libglade2.0_0 libglib2.0_0 libgtk2.0_0 libintl8 libstartup-notification1_0 libX11_6 libxml2 openbox
-sdesc: "OpenBox WM configuration tool"
-ldesc: "Configuration tool for the OpenBox window manager."
