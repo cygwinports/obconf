@@ -1,0 +1,29 @@
+--- origsrc/obconf-2.0.4/src/appearance.c	2013-08-11 15:57:50.000000000 -0500
++++ src/obconf-2.0.4/src/appearance.c	2013-10-23 15:12:02.749422900 -0500
+@@ -17,6 +17,7 @@
+    See the COPYING file for a copy of the GNU General Public License.
+ */
+ 
++#include <ctype.h>	/* for isupper() */
+ #include "main.h"
+ #include "tree.h"
+ #include "preview_update.h"
+--- origsrc/obconf-2.0.4/src/desktops.h	2013-08-10 11:13:13.000000000 -0500
++++ src/obconf-2.0.4/src/desktops.h	2013-10-23 15:13:30.523443300 -0500
+@@ -24,5 +24,6 @@
+ 
+ void desktops_setup_num(GtkWidget *w);
+ void desktops_setup_names(GtkWidget *w);
++void desktops_setup_tab(void);
+ 
+ #endif
+--- origsrc/obconf-2.0.4/src/main.c	2013-08-11 16:18:18.000000000 -0500
++++ src/obconf-2.0.4/src/main.c	2013-10-23 15:12:42.407691300 -0500
+@@ -28,6 +28,7 @@
+ #include "dock.h"
+ #include "preview_update.h"
+ #include "gettext.h"
++#include "moveresize.h"
+ 
+ #include <gdk/gdkx.h>
+ #define SN_API_NOT_YET_FROZEN
