@@ -1,6 +1,6 @@
 NAME="obconf"
 VERSION=2.0.4
-RELEASE=1
+RELEASE=2
 CATEGORY="X11"
 SUMMARY="OpenBox WM configuration tool"
 DESCRIPTION="Configuration tool for the OpenBox window manager."
